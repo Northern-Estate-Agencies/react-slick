@@ -1,6 +1,6 @@
 {
   "name": "nea-react-slick",
-  "version": "0.30.4",
+  "version": "0.30.6",
   "description": " React port of slick carousel",
   "main": "./lib",
   "types": "node_modules/@types/react-slick/index.d.ts",
