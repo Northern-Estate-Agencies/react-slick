@@ -127,6 +127,8 @@ const renderSlides = spec => {
         "aria-hidden": !slideClasses["slick-active"],
         style: {
           outline: "none",
+          visibility: `${slideClasses["slick-active"] ? "visible" : "hidden"}`,
+          transition: "visibility 0.3s linear",
           ...(child.props.style || {}),
           ...childStyle
         },
@@ -157,6 +159,10 @@ const renderSlides = spec => {
             "aria-hidden": !slideClasses["slick-active"],
             style: {
               ...(child.props.style || {}),
+              visibility: `${
+                slideClasses["slick-active"] ? "visible" : "hidden"
+              }`,
+              transition: "visibility 0.3s linear",
               ...childStyle
             },
             onClick: e => {
@@ -183,6 +189,10 @@ const renderSlides = spec => {
           "aria-hidden": !slideClasses["slick-active"],
           style: {
             ...(child.props.style || {}),
+            visibility: `${
+              slideClasses["slick-active"] ? "visible" : "hidden"
+            }`,
+            transition: "visibility 0.3s linear",
             ...childStyle
           },
           onClick: e => {
